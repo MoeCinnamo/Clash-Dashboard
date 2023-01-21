@@ -20,6 +20,7 @@ jobs:
       run: |
         pnpm install --frozen-lockfile
         pnpm build
+        cp 404.html dist
     - name: Deploy
       uses: crazy-max/ghaction-github-pages@v3
       with:
